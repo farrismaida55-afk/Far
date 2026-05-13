@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for Responsiveness & Compatibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farrishub - Your Ultimate Digital Hub with Neon Cyberpunk Aesthetic">
+    <meta name="theme-color" content="#ff00ff">
+    
+    <!-- Title -->
+    <title>Farrishub - Your Digital Hub</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== STARS BACKGROUND ========== -->
+    <div class="stars"></div>
+
+    <!-- ========== MAIN CONTAINER ========== -->
+    <div class="container">
+        <!-- ========== HEADER SECTION ========== -->
+        <div class="header">
+            <h1 class="title">FARRISHUB</h1>
+            <p class="subtitle">✨ Your Ultimate Digital Hub ✨</p>
+        </div>
+
+        <!-- ========== CARDS GRID ========== -->
+        <div class="cards-container">
+            <!-- YouTube Card -->
+            <div class="app-card" id="youtube-card" tabindex="0" role="button" aria-label="YouTube - Opens in new tab">
+                <div class="card-icon">▶️</div>
+                <div class="card-text">YouTube</div>
+            </div>
+
+            <!-- TikTok Card -->
+            <div class="app-card" id="tiktok-card" tabindex="0" role="button" aria-label="TikTok - Opens in new tab">
+                <div class="card-icon">🎵</div>
+                <div class="card-text">TikTok</div>
+            </div>
+
+            <!-- Discord Card -->
+            <div class="app-card" id="discord-card" tabindex="0" role="button" aria-label="Discord - Opens in new tab">
+                <div class="card-icon">💬</div>
+                <div class="card-text">Discord</div>
+            </div>
+
+            <!-- Games Card -->
+            <div class="app-card" id="games-card" tabindex="0" role="button" aria-label="Games - Opens games modal">
+                <div class="card-icon">🎮</div>
+                <div class="card-text">Games</div>
+            </div>
+
+            <!-- Snapchat Card -->
+            <div class="app-card" id="snapchat-card" tabindex="0" role="button" aria-label="Snapchat - Opens in new tab">
+                <div class="card-icon">👻</div>
+                <div class="card-text">Snapchat</div>
+            </div>
+
+            <!-- Roblox Card -->
+            <div class="app-card" id="roblox-card" tabindex="0" role="button" aria-label="Roblox - Opens in new tab">
+                <div class="card-icon">🎰</div>
+                <div class="card-text">Roblox</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== GAMES MODAL ========== -->
+    <div class="modal hidden" id="games-modal" role="dialog" aria-labelledby="games-modal-title">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="modal-title" id="games-modal-title">🎮 GAMES HUB</h2>
+                <button class="close-games" id="close-games" aria-label="Close games modal" title="Press Escape to close">✕</button>
+            </div>
+
+            <!-- Games Section -->
+            <div class="modal-section">
+                <h3 class="section-title">🌟 Featured Games</h3>
+                <p class="section-description">
+                    Explore amazing online games and gaming platforms. Click below to visit popular gaming sites:
+                </p>
+                <div>
+                    <button class="game-button" onclick="window.open('https://store.steampowered.com', '_blank')">🎮 Steam</button>
+                    <button class="game-button" onclick="window.open('https://www.epicgames.com/store', '_blank')">🔥 Epic Games</button>
+                    <button class="game-button" onclick="window.open('https://www.twitch.tv', '_blank')">📺 Twitch</button>
+                </div>
+            </div>
+
+            <!-- Multiplayer Games Section -->
+            <div class="modal-section">
+                <h3 class="section-title">👥 Multiplayer Games</h3>
+                <p class="section-description">
+                    Join thousands of players in exciting multiplayer experiences:
+                </p>
+                <div>
+                    <button class="game-button" onclick="window.open('https://www.minecraft.net', '_blank')">⛏️ Minecraft</button>
+                    <button class="game-button" onclick="window.open('https://www.elden-ring.com', '_blank')">⚔️ Elden Ring</button>
+                    <button class="game-button" onclick="window.open('https://www.counterstrike2.com', '_blank')">💥 CS2</button>
+                </div>
+            </div>
+
+            <!-- Casual Games Section -->
+            <div class="modal-section">
+                <h3 class="section-title">🎯 Casual Games</h3>
+                <p class="section-description">
+                    Quick and fun games to enjoy anytime:
+                </p>
+                <div>
+                    <button class="game-button" onclick="window.open('https://www.chess.com', '_blank')">♟️ Chess</button>
+                    <button class="game-button" onclick="window.open('https://www.pokemonunite.io', '_blank')">⚡ Pokemon</button>
+                    <button class="game-button" onclick="window.open('https://www.fortnite.com', '_blank')">🎪 Fortnite</button>
+                </div>
+            </div>
+
+            <!-- Gaming Tips Section -->
+            <div class="modal-section">
+                <h3 class="section-title">💡 Pro Tips</h3>
+                <p class="section-description">
+                    ✨ Always stay updated with the latest game releases and updates<br>
+                    🎯 Join gaming communities to connect with other players<br>
+                    🏆 Challenge yourself with different game genres<br>
+                    📱 Many games are available on mobile and PC<br>
+                    🌍 Explore games from around the world
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="script.js"></script>
+</body>
+</html>
